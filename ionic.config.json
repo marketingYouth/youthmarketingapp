@@ -1,0 +1,7 @@
+{
+  "name": "Youth Marketing",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
