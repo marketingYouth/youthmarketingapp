@@ -24,3 +24,13 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-content{
+    --ion-text-color: #fffafa;
+    --background: rgba(0, 0, 0, 0.699) url('./assets/icon/favicon.png') 0 100%/100% 100% no-repeat;
+}
+
+ion-toolbar{
+    --background: rgba(0, 0, 0, 0.486);
+    --ion-text-color: #fffafa;
+}
