@@ -1,23 +1,54 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      this is home pgage
+    <ion-title size="large">
+      Youth Marketing
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <h1>
+    !!!مرحباً
+  </h1>
   <ion-text>
     <p>
-      مرحبا يكم في تطبيقنا الذي يساعدكم على ايجاد أفضل المنتجات أو بيع منتجاتكم وعرضها لدينا
+      أهلاً بكم في المكان المخصص لخدمة ربات المنازل اللواتي يبحثن عن مكان لعرض منتجاتهن
     </p>
   </ion-text>
-  <div>
-    <ion-button>
+  <ion-text>
+    <strong>
+      <p>
+        اختر اذا ما كنت ترغب في أن تدخل كزبون أو بائع لعرض منتجاتك
+      </p>
+    </strong>
+  </ion-text>
+  <div class="buttons">
+    <ion-button shape="round" (click)="printHello()">
       بائع
     </ion-button>
-    <ion-button>
+    <ion-button shape="round" (click)="printHello()">
       زبون
     </ion-button>
   </div>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <strong>
+      <ion-text>
+        للشكاوي والاقتراحات تواصل معنا:
+      </ion-text>
+    </strong>
+    <ion-buttons>
+      <ion-button size="mid" href="{{'https://api.whatsapp.com/send?phone=962' + 798726360}}">
+       واتساب <ion-icon color="success" size="large" name="logo-whatsapp"></ion-icon>
+      </ion-button>
+      <ion-button size="mid" href="https://www.facebook.com/Youth-Marketing-107037065177889">
+       فيسبوك <ion-icon color="primary" size="large" name="logo-facebook"></ion-icon>
+      </ion-button>
+      <ion-button href="mailto:youth.marketing.developer@gmail.com">
+       ايميل <ion-icon src="../../assets/icons8-gmail-logo.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

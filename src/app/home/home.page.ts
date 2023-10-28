@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
-
+  printHello(){
+    console.log("Hello World")
+  }
 }
