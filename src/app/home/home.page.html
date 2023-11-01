@@ -8,7 +8,7 @@
 
 <ion-content [fullscreen]="true">
   <h1>
-    !!!مرحباً
+    مرحباً!!!
   </h1>
   <ion-text>
     <p>
@@ -23,10 +23,10 @@
     </strong>
   </ion-text>
   <div class="buttons">
-    <ion-button shape="round" (click)="printHello()">
+    <ion-button shape="round" [routerLink]="['/login']">
       بائع
     </ion-button>
-    <ion-button shape="round" (click)="printHello()">
+    <ion-button shape="round" [routerLink]="['/customers']">
       زبون
     </ion-button>
   </div>
