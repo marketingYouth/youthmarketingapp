@@ -8,5 +8,26 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <form>
+    <ion-input placeholder="رقم الهاتف" required>
+    </ion-input>
+    <ion-input placeholder="كلمة السر" required>
+    </ion-input>
+    <ion-button id="submitButton" type="submit" expand="block">تسجيل الدخول</ion-button>
+  </form>
+  <ion-button id="forgotButton" size="small" fill="clear" color="medium">
+    هل نسيت كلمة السر؟
+  </ion-button>
+  <br>
+  
+  <div class="make-account">
+    <ion-text>
+      ترغب في أن تصبح بائع جديد لدينا؟
+    </ion-text>
+    <br>
+    <ion-text>
+      <a [routerLink]="['/signup']">قم بإنشاء حساب</a>
+    </ion-text>
+  </div>
   
 </ion-content>
