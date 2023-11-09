@@ -9,10 +9,14 @@
 
 <ion-content [fullscreen]="true">
   <form>
-    <ion-input placeholder="رقم الهاتف" required>
-    </ion-input>
-    <ion-input placeholder="كلمة السر" required>
-    </ion-input>
+    <div id="phonenumber">
+      <ion-input type="number" [minlength]="9" [maxlength]="10" placeholder="رقم الهاتف" required>
+      </ion-input>
+    </div>
+    <div id="password">
+      <ion-input type="password" [minlength]="8" placeholder="كلمة السر" required>
+      </ion-input>
+    </div>
     <ion-button id="submitButton" type="submit" expand="block">تسجيل الدخول</ion-button>
   </form>
   <ion-button id="forgotButton" size="small" fill="clear" color="medium">
